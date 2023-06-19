@@ -1,0 +1,87 @@
+CREATE TABLE [dbo].[ticket] (
+    [编号]   INT           IDENTITY (1000, 1) NOT NULL,
+    [中奖号码] NVARCHAR (50) NULL,
+    [发布时间] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([编号] ASC)
+);
+
+CREATE TABLE [dbo].[total] (
+    [流水号]  INT           IDENTITY (11000000, 1) NOT NULL,
+    [编号]   NVARCHAR (50) NULL,
+    [账号]   NVARCHAR (50) NULL,
+    [昵称]   NVARCHAR (50) NULL,
+    [购买号码] NVARCHAR (50) NULL,
+    [购买时间] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([流水号] ASC)
+);
+
+CREATE TABLE [dbo].[user_id] (
+    [账号] NVARCHAR (50) NOT NULL,
+    [昵称] NVARCHAR (50) NULL,
+    [密码] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([账号] ASC)
+);
+
+CREATE TABLE [dbo].[user_info] (
+    [账号]   NVARCHAR (50) NOT NULL,
+    [昵称]   NVARCHAR (50) NULL,
+    [财富]   NVARCHAR (50) DEFAULT ((0)) NULL,
+    [中奖号码] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([账号] ASC)
+);
+
+SET IDENTITY_INSERT [dbo].[ticket] ON
+INSERT INTO [dbo].[ticket] ([编号], [中奖号码], [发布时间]) VALUES (1000, N'25,11,22,17,6,14,30', N'2022年11月17日')
+INSERT INTO [dbo].[ticket] ([编号], [中奖号码], [发布时间]) VALUES (1018, N'8,6,18,1,24,17,33', N'2022年11月18日')
+INSERT INTO [dbo].[ticket] ([编号], [中奖号码], [发布时间]) VALUES (1020, N'23,9,31,13,19,14,5', N'2022年11月18日')
+INSERT INTO [dbo].[ticket] ([编号], [中奖号码], [发布时间]) VALUES (1021, N'未开奖', N'2022年5月8日')
+SET IDENTITY_INSERT [dbo].[ticket] OFF
+
+SET IDENTITY_INSERT [dbo].[total] ON
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000001, N'1000', N'1000', N'测试', N'25,11,22,17,6,14,30', N'2022年11月16日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000002, N'1001', N'1000', N'测试', N'25,11,22,17,6,14,30', N'2022年11月16日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000003, N'1002', N'1000', N'测试', N'24,21,12,26,18,8,2', N'2022年11月16日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000004, N'1002', N'1000', N'测试', N'15,6,5,17,33,26,10', N'2022年11月17日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000006, N'1019', N'1001', N'小红', N'27,11,32,31,9,29,23', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000007, N'1019', N'1002', N'小明', N'1,2,3,4,5,23,32', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000008, N'1019', N'1002', N'小明', N'12,1,9,25,31,13,16', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000009, N'1018', N'1002', N'小明', N'8,6,18,1,24,17,33', NULL)
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000010, N'1021', N'1004', N'好好', N'22,12,23,24,10,26,5', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000011, N'1021', N'1004', N'好好', N'1,7,13,16,23,10,22', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000012, N'1021', N'1004', N'好好', N'12,11,9,28,7,2,19', N'2022年11月18日')
+INSERT INTO [dbo].[total] ([流水号], [编号], [账号], [昵称], [购买号码], [购买时间]) VALUES (11000013, N'1021', N'1004', N'好好', N'28,31,32,24,8,12,7', N'2022年11月18日')
+SET IDENTITY_INSERT [dbo].[total] OFF
+
+
+INSERT INTO [dbo].[user_id] ([账号], [昵称], [密码]) VALUES (N'1000', N'测试', N'000')
+INSERT INTO [dbo].[user_id] ([账号], [昵称], [密码]) VALUES (N'1001', N'小红', N'123')
+INSERT INTO [dbo].[user_id] ([账号], [昵称], [密码]) VALUES (N'1002', N'小明', N'123')
+INSERT INTO [dbo].[user_id] ([账号], [昵称], [密码]) VALUES (N'1003', N'李明', N'123')
+INSERT INTO [dbo].[user_id] ([账号], [昵称], [密码]) VALUES (N'1004', N'好好', N'123')
+
+
+INSERT INTO [dbo].[user_info] ([账号], [昵称], [财富], [中奖号码]) VALUES (N'1000', N'测试', N'1000005', N'25,11,22,17,6,14,30')
+INSERT INTO [dbo].[user_info] ([账号], [昵称], [财富], [中奖号码]) VALUES (N'1001', N'小红', N'95', NULL)
+INSERT INTO [dbo].[user_info] ([账号], [昵称], [财富], [中奖号码]) VALUES (N'1002', N'小明', N'1000026', N'8,6,18,1,24,17,33')
+INSERT INTO [dbo].[user_info] ([账号], [昵称], [财富], [中奖号码]) VALUES (N'1003', N'李明', N'100', NULL)
+INSERT INTO [dbo].[user_info] ([账号], [昵称], [财富], [中奖号码]) VALUES (N'1004', N'好好', N'379', NULL)
+
+
+
+
+GO
+
+CREATE TRIGGER [dbo].[Trigger_BasicInfomation]
+    ON [dbo].[user_id]
+    FOR DELETE, INSERT
+    AS BEGIN INSERT INTO 
+	user_info(账号,昵称) 
+	SELECT 账号,昵称
+	FROM INSERTED 
+END
+
+create view user_total
+as
+select user_info.账号,user_info.昵称,财富,中奖号码,流水线,编号
+from user_info,total
+where user_info.账号=total.账号

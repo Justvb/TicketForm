@@ -1,0 +1,17 @@
+E:\LastTest\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.dll
+E:\LastTest\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.pdb
+E:\LastTest\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.csproj.CoreCompileInputs.cache
+E:\LastTest\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.dll
+E:\LastTest\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.pdb
+E:\LastTest\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.csprojAssemblyReference.cache
+C:\课程作业\数据库\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.dll
+C:\课程作业\数据库\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.pdb
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.csproj.CoreCompileInputs.cache
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.dll
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.pdb
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.dll
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.pdb
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.dll
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\bin\Debug\TicketForm.Models.pdb
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.csproj.AssemblyReference.cache
+D:\桌面\数据库大作业\TicketForm\TicketForm.Models\obj\Debug\TicketForm.Models.csproj.CoreCompileInputs.cache

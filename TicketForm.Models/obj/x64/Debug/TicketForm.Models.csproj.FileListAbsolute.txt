@@ -1,0 +1,5 @@
+C:\课程作业\数据库\TicketForm\TicketForm.Models\bin\x64\Debug\TicketForm.Models.dll
+C:\课程作业\数据库\TicketForm\TicketForm.Models\bin\x64\Debug\TicketForm.Models.pdb
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\x64\Debug\TicketForm.Models.csproj.CoreCompileInputs.cache
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\x64\Debug\TicketForm.Models.dll
+C:\课程作业\数据库\TicketForm\TicketForm.Models\obj\x64\Debug\TicketForm.Models.pdb
